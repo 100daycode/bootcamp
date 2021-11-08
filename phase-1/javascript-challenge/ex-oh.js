@@ -1,6 +1,5 @@
 /***************************************************************************************
  *                                                                                      *
- *                                                                                      *
  *  Ex Oh                                                                               *
  *  Using the JavaScript language, have the function ExOh(str) take the str parameter   *
  *  being passed and return the string true if there is an equal number of x's and o's, *
@@ -10,21 +9,15 @@
  ***************************************************************************************/
 
 function exOh(str) {
-  const w = str.split("");
-  w.reduce((e, i) => {
-    console.log(i);
-  });
+  // split return array
+  const word = str.split("");
+  const findX = word.filter((items) => items === "x").length;
+  const findO = word.filter((items) => items === "o").length;
+  return findX === findO;
 }
 
-// this.dataMarital =
-//   response.Data &&
-//   response.Data.filter(
-//     (v, i, a) =>
-//       a.findIndex((t) => t.employee_marital_id === v.employee_marital_id) === i
-//   );
-
-// console.log(exOh('xooxxxxooxo')) // false
-// console.log(exOh('xxxxxooxo')) // false
+console.log(exOh("xooxxxxooxo")); // false
+console.log(exOh("xxxxxooxo")); // false
 console.log(exOh("ooxxooxoxx")); // true
 
 module.exports = {
