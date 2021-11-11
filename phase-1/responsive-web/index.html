@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <!-- Local Css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
     <title>Document</title>
 </head>
 
@@ -35,6 +44,7 @@
                 </div>
             </div>
         </div>
+
         <!-- slider -->
         <div class="slider">
 
@@ -42,7 +52,6 @@
         <!-- middle content -->
         <div class="middle-content">
             <div class="content-img">
-
             </div>
             <div class="content-desc">
                 <div class="content-title">
@@ -69,7 +78,126 @@
                 </div>
             </div>
         </div>
+
+        <!-- Gallery -->
+        <div class="gallery-container">
+
+            <div class="gallery-title">
+                <h1>
+                    Four Seasons Seychelles review
+                </h1>
+            </div>
+
+            <div class="gallery-desc">
+                <p> Our flight from Paris arrived at around 10AM. Initially we were planning on renting a car while in
+                    the <br>
+                    Seychelles, but due to some issues we ended up taking a taxi instead.</p>
+            </div>
+
+            <div class="content-gallery">
+
+                <div class="item-gallery-1">
+                </div>
+
+                <div class="item-gallery-2">
+                </div>
+
+                <div class="item-gallery-3">
+                </div>
+
+                <div class="item-gallery-4">
+                </div>
+
+                <div class="item-gallery-5">
+                </div>
+
+                <div class="item-gallery-6">
+                </div>
+
+                <div class="item-gallery-7">
+                </div>
+
+                <div class="item-gallery-8">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Location -->
+        <div class="location-card">
+            <div class="location-item-1">
+                <h4>01</h4>
+                <h2>Booking</h2>
+                <p>Rates for this property were much lower than I was expecting for an Autograph Collection hotel in a
+                    major city, but I was able to book a one-night stay for only $133 after taxes.</p>
+            </div>
+            <div class="location-item-2">
+                <h4>02</h4>
+                <h2>Location</h2>
+                <p>EMC2 is located in a prime spot, just a block and a half away from Michigan Avenue and the
+                    never-ending shops and restaurants on the Magnificent Mile.</p>
+            </div>
+            <div class="location-item-3">
+                <h4>03</h4>
+                <h2>Check-in</h2>
+                <p>Space is at a premium in downtown Chicago, and this hotel didn’t waste an inch of it. In fact, I
+                    ended up walking past the entrance twice before figuring out which door to go in.</p>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-box">
+            <div class="map-content">
+                <div id='map' style='width: 100%; height: 100%;'></div>
+            </div>
+
+            <div class="map-desc">
+                <h1>
+                    Four Seasons Seychelles dining
+                </h1>
+                <p>
+                    Now let’s take a look at food at the resort. Breakfast is included for all guests at the Four
+                    Seasons, and is served daily at ZEZ Restaurant, from 7AM until 10:30AM. ZEZ Restaurant was located
+                    near the center of the resort, a few flights of stairs down from reception.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bottom-content">
+            <div class="bottom-content-tittle">
+                Enjoy This Review? Check Out Hundreds of Other Reports
+                on Airlines, Hotels and Airport Lounges Worldwide!
+            </div>
+            <div class="bottom-content-social-media">
+                <div class="bottom-content-item">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </div>
+                <div class="bottom-content-item">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <div class="bottom-content-item">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+                <div class="bottom-content-item">
+                    <i class="fab fa-tiktok fa-2x"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Created By Fiqry Choerudin / fiqryq
+        </div>
     </div>
 </body>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZmlxcnljaG9lcnVkaW4iLCJhIjoiY2s0NWRpbzd1MDVoaDNkc2VjanduaTFxbCJ9.7N9XKLeS7ByWD2SmeZSyuA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+    });
+</script>
 
 </html>

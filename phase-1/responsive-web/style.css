@@ -84,3 +84,281 @@
 .content-button a:visited {
   color: black;
 }
+
+.gallery-container {
+  width: 100%;
+  height: 110vh;
+}
+
+.gallery-title {
+  padding-top: 50px;
+}
+
+.gallery-title h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.gallery-desc p {
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1rem;
+}
+
+.content-gallery {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item-gallery-1 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1563911302283-d2bc129e7570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80");
+}
+
+.item-gallery-2 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+}
+
+.item-gallery-3 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+.item-gallery-4 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+}
+
+.item-gallery-5 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1572177215152-32f247303126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+}
+
+.item-gallery-6 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1521783988139-89397d761dce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80");
+}
+
+.item-gallery-7 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-image: url("https://images.unsplash.com/photo-1518105515732-8df2a35c0c56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+.item-gallery-8 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1560931466-ee712225b223?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1155&q=80");
+}
+
+.item-gallery-9 {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1561650714-6dadeb59b27f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+}
+
+.location-card {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.location-item-1 {
+  width: 100%;
+  height: 500px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  background-color: #eac61e;
+}
+
+.location-item-1 h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.location-item-1 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.location-item-1 p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-top: 10px;
+}
+
+.location-item-2 {
+  width: 100%;
+  height: 500px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: #7eb9a3;
+}
+
+.location-item-2 h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.location-item-2 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.location-item-2 p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-top: 10px;
+}
+
+.location-item-3 {
+  width: 100%;
+  height: 500px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: #1d5c40;
+}
+
+.location-item-3 h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.location-item-3 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.location-item-3 p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-top: 10px;
+}
+
+.map-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1506059612708-99d6c258160e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+}
+
+.map-content {
+  width: 550px;
+  height: 650px;
+  background-color: tomato;
+}
+
+.map-desc {
+  width: 550px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.map-desc h1 {
+  font-size: 4rem;
+  text-align: start;
+  color: white;
+  font-weight: bold;
+}
+
+.map-desc p {
+  font-size: 1.1rem;
+  padding-top: 30px;
+  text-align: start;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.bottom-content {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d5c40;
+}
+
+.bottom-content-tittle {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-top: 30px;
+  color: white;
+}
+
+.bottom-content-social-media {
+  width: 400px;
+  height: 50px;
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(34, 34, 34);
+}
