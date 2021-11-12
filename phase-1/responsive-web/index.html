@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
 
     <!-- Local Css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -18,6 +18,13 @@
     <!-- mapbox -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- glide -->
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
     <title>Document</title>
 </head>
@@ -47,7 +54,51 @@
 
         <!-- slider -->
         <div class="slider">
+            <div class="glide">
+                <!-- content glide -->
 
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="glide-content">
+                                    <div class="content-items-1">
+                                        Four Seasons Seychelles ocean view villa
+                                    </div>
+                                    <div class="content-items-2">
+                                        We had been upgraded to an ocean view villa (this is a one category upgrade over
+                                        the base
+                                        room, which is a garden view villa), #205. It seemed to me like our villa was
+                                        especially
+                                        secluded, as there were no other villas anywhere in the area.
+                                        WOW, this villa was beautiful. There was a gate and then a path leading into the
+                                        villa’s
+                                        outdoor area.
+                                    </div>
+                                    <div class="content-items-3">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">........</li>
+                            <li class="glide__slide">........</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- arrow -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+
+                <!-- bullet indicator -->
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+
+            </div>
         </div>
         <!-- middle content -->
         <div class="middle-content">
@@ -192,12 +243,18 @@
         </div>
     </div>
 </body>
+<!-- Map -->
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZmlxcnljaG9lcnVkaW4iLCJhIjoiY2s0NWRpbzd1MDVoaDNkc2VjanduaTFxbCJ9.7N9XKLeS7ByWD2SmeZSyuA';
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11'
     });
+</script>
+<!-- Glide -->
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+    new Glide('.glide').mount()
 </script>
 
 </html>
