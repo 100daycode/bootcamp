@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+}
