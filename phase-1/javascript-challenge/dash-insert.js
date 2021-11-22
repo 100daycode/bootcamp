@@ -16,11 +16,20 @@
 
 function dashInsert(str) {
   // write your magic here!
-  return str;
+  // convert string to number
+  const arr = str.split("").map((item) => Number(item));
+  for (let index = 0; index < arr.length; index++) {
+    if (arr[index - 1] % 2 == 1 && arr[index] % 2 == 1) {
+      // how splice work :
+      // splice(start, deleteCount, item1)
+      arr.splice(index, 0, "-");
+    }
+  }
+  return arr.join("");
 }
-
-// console.log(dashInsert('450093')) // 45009-3
-// console.log(dashInsert('554297')) // 5-5429-7
+console.log(dashInsert("450093"));
+// console.log(dashInsert("450093"));
+// console.log(dashInsert("554297"));
 
 module.exports = {
   dashInsert,
